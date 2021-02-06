@@ -2,9 +2,9 @@ import React from 'react';
 import PlaylistSong from './PlaylistSong';
 
 
-const Playlist = ({ songs, setCurrentSong, audioRef, isPlaying}) => {
+const Playlist = ({ songs, setCurrentSong, audioRef, isPlaying, setSongs, playlistStatus } = {}) => {
   return ( 
-    <div className="playlist">
+    <div className={`playlist ${playlistStatus ? 'active-playlist' : ""}`}>
       <h2>Playlist</h2>
       <div className="playlist-songs">
       {songs.map(song => (
@@ -16,6 +16,7 @@ const Playlist = ({ songs, setCurrentSong, audioRef, isPlaying}) => {
         key={song.id}
         audioRef={audioRef}
         isPlaying={isPlaying}
+        setSongs={setSongs}
         />
       ))}
       </div>
