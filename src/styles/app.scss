@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Code Pro", monospace;
+}
+
+h1,
+h2,
+h3 {
+  color: #3f3e3e;
+}
+
+h3, h4{
+  color: rgb(92, 91, 91); 
+}
+
+@import "./player";
+@import "./song";
+@import "./playlist";
