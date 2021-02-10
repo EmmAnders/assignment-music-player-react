@@ -30,6 +30,19 @@
 
   svg{
     cursor: pointer; 
+    color: rgb(37, 37, 37);
   }
-  
+}
+@media screen and (max-width:768px){
+ 
+.player{
+  overflow-x: hidden;
+}
+  .time-control{
+    width: 90%; 
+  }
+
+  .player-control {
+    width: 60%; 
+  }
 }

@@ -8,7 +8,7 @@ import Playlist from "./components/Playlist.js";
 
 
 //Data
-import musicData from "./musicData.js";
+import musicData from "./music/musicData.js";
 
 //Styles
 import "./styles/app.scss";
@@ -23,7 +23,7 @@ function App() {
   const [playlistStatus, setPlaylistStatus] = useState(false);
 
   return (
-    <div className="App">
+    <div className={`App ${playlistStatus ? 'playlist-active' : "" }`}>
 
       <Nav 
       playlistStatus={playlistStatus} 
@@ -36,6 +36,9 @@ function App() {
         isPlaying={isPlaying}
         setIsPlaying={setIsPlaying}
         currentSong={currentSong}
+        setCurrentSong={setCurrentSong}
+        songs={songs}
+        setSongs={ setSongs }
       />
       <Playlist 
       songs={songs} 

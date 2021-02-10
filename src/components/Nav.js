@@ -7,7 +7,6 @@ const Nav = ({setPlaylistStatus, playlistStatus}) => {
     <nav>
       <h1>SanAndreas</h1>
       <button onClick={()=> setPlaylistStatus(!playlistStatus)}>
-        Music
         <FontAwesomeIcon icon={faMusic}/>
       </button>
     </nav>

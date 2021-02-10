@@ -6,13 +6,24 @@ nav {
 
   button {
     background: transparent;
-    border: 1px solid rgb(65, 65, 65);
+    border: 1px solid rgb(37, 37, 37);
     cursor: pointer;
-    padding: 0.5rem;
+    padding: 1rem 1.5rem;
     transition: all 0.3 ease;
+    color: rgb(37, 37, 37);
+    transition: background-color 1s ease-in;
+  
     &:hover {
-      background: rgb(65, 65, 65);
-      color: white;
+
+  
+    }
+  }
+}
+
+@media screen and (max-width:768px){
+  nav{
+    button{
+      z-index: 10; 
     }
   }
 }

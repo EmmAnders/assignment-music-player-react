@@ -4,12 +4,12 @@
   left: 0;
   width: 20rem;
   height: 100%;
-  background: white;
-  box-shadow: 2px 2px 50px rgb(197, 196, 196);
+  
   overflow: scroll;
   transform: translateX(-100%);
   transition: all 0.5s ease;
   opacity: 0; 
+  background: white; 
 
   h2 {
     padding: 2rem;
@@ -27,7 +27,8 @@
   }
 
   &:hover {
-    background: rgb(236, 235, 235);
+    background: rgb(231, 231, 231); 
+    
     transform: scale(1.01);
   }
 }
@@ -45,12 +46,18 @@
 }
 
 .selected{
-  background: rgb(227, 227, 247);
-  
+  background: rgb(241, 240, 240);
+
 }
 
 .active-playlist{
   transform: translateX(0%);
   opacity: 1; 
+}
+
+@media screen and (max-width:768px){
+.playlist {
+  width: 100%; 
+}
 }
 
